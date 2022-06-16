@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW JS 29</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'AppleSystemUIFont', sans-serif;
+        }
+
+        body {
+            background: #f8e7e7;
+        }
+
+        .main-wrap {
+            padding: 50px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .form-block {
+            width: 400px;
+        }
+
+        .form-block h2 {
+            margin-bottom: 10px;
+        }
+
+        #inputName {
+            padding: 10px;
+        }
+
+        #name, #date {
+            margin-bottom: 10px;
+        }
+
+        .form-block label input, .form-block label textarea {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .form-block label textarea {
+            height: 150px;
+            padding: 10px;
+        }
+
+        .form-block label:nth-child(2), .form-block label:nth-child(2) textarea {
+            display: block;
+        }
+
+        .form-block input:nth-child(3), .form-block input:nth-child(4) {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        .first {
+            padding-bottom: 60px;
+        }
+        .comment-wrap {
+            border-bottom: 0.5px solid #323232;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-wrap" id="main-wrap">
+    <div class="first">
+        <h1>What is lorem ipsum?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt exercitationem facere iure libero necessitatibus perferendis quaerat quibusdam soluta velit? Ab, architecto blanditiis cumque ducimus eum hic, in inventore laborum natus odio, officia pariatur perferendis repellat repudiandae sapiente sequi voluptatibus! Aliquid blanditiis dolor illo optio pariatur sint veritatis. Adipisci aliquam amet delectus iure natus! At error eum itaque labore obcaecati odit. Commodi distinctio enim magnam odit rerum sapiente sed voluptas. Incidunt magnam magni natus nisi nobis quos, repudiandae totam voluptatem? Ab alias aperiam aspernatur assumenda aut delectus dolores enim eveniet harum, itaque perferendis placeat praesentium quaerat repellendus, sint soluta tempora tempore.</p>
+    </div>
+    <div id="commentWrap">
+
+    </div>
+    <div class="form-block">
+        <h2>Leave your comment</h2>
+        <form>
+            <label>Name <input id="inputName" type="text" placeholder="Your Name"></label>
+            <label>Comment <textarea id="inputText"></textarea></label>
+            <input id="btnOk" type="button" value="OK">
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
